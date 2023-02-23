@@ -1,5 +1,32 @@
 /* index */
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+ul,
+ol {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+
+.list {
+	list-style: none;
+}
+
+img {
+	display: block;
+}
+
+
 :root {
 	--main-light-color: #ffffff;
 	--accent-color: #2196f3;
@@ -50,7 +77,10 @@ ul {
 }
 
 /* header */
-.header {}
+
+.container_main {
+	width: 1158px;
+}
 
 .header_nav {
 	font-style: normal;
@@ -58,6 +88,8 @@ ul {
 	font-size: 18px;
 	line-height: 1.33;
 	letter-spacing: 0.03em;
+	width: 1440px;
+	height: 72px;
 }
 
 .header_nav_logo {
@@ -67,6 +99,15 @@ ul {
 	font-weight: 800;
 	line-height: 1.14;
 	letter-spacing: 0.03em;
+	padding: 0;
+	position: absolute;
+	width: 115px;
+	height: 24px;
+	left: 156px;
+	top: 24px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
 }
 
 .header_nav_logo>span {
@@ -79,6 +120,22 @@ ul {
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: var(--grey);
+
+
+}
+
+.header_nav_list {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 40px;
+
+	position: absolute;
+	width: 261px;
+	height: 24px;
+	left: 347px;
+	top: 24px;
 }
 
 .header_link {
@@ -109,9 +166,29 @@ ul {
 	color: var(--grey-syniy);
 }
 
+.address_list {
+	position: absolute;
+	width: 153px;
+	height: 24px;
+	left: 940px;
+	top: 24px;
+}
+
+.address_tel {
+	position: absolute;
+	width: 151px;
+	height: 24px;
+	left: 1133px;
+	top: 24px;
+}
+
 /*Hero image*/
 .hero {
 	background: var(--grey);
+	width: 1440px;
+	height: 600px;
+	text-align: center;
+
 }
 
 .hero_header {
@@ -120,6 +197,9 @@ ul {
 	text-align: center;
 	letter-spacing: 0.02em;
 	color: var(--main-light-color);
+	padding-top: 188px;
+	473px;
+
 }
 
 .hero_btn {
@@ -134,6 +214,9 @@ ul {
 	padding: 16px 32px;
 	color: var(--main-light-color);
 	background: var(--syniy);
+	margin: 48px;
+
+
 }
 
 .hero_btn:hover,
@@ -144,9 +227,26 @@ ul {
 /*Advantages*/
 .advan {}
 
-.advan_list {}
+.container {
+	display: inline;
+}
 
-.advan_item {}
+.advan_list {
+	display: flex;
+	margin-top: 120px;
+	width: 1128px;
+	height: 104px;
+	padding-left: 156px;
+	padding-bottom: 120px;
+	}
+
+.advan_item {
+	width: 264px;
+box-sizing: content-box;
+margin-right: 24px;
+}
+
+
 
 .advan-header {
 	font-weight: 500;
@@ -164,7 +264,15 @@ ul {
 }
 
 /*Examples*/
-.examp {}
+.examp {
+	width: 1128px;
+	height: 412px;
+	margin-top: 120px; 
+}
+
+.examp_item {
+margin: 24px;
+}
 
 .examp_header {
 	font-size: 36px;
@@ -173,13 +281,23 @@ ul {
 	letter-spacing: 0.02em;
 	text-transform: capitalize;
 	color: var(--grey);
+	align-content: center;
+	padding-bottom: 72px;
 }
 
-.examp_list {}
+
+.examp_list {
+display: flex;
+  align-items: center;
+ 	margin: 10px;
+	}
 
 /*Team*/
 .team {
 	background: var(--cloud);
+	width: 1440px;
+height: 732px;
+margin-top: 120px;
 }
 
 .team_header {
@@ -188,10 +306,17 @@ ul {
 	text-align: center;
 	letter-spacing: 0.02em;
 	color: var(--grey);
+	padding-top: 120px;
+	padding-bottom: 72px;
 }
 
 .team_list {
 	background-color: var(--main-light-color);
+	width: 264px;
+height: 380px;
+text-align: center;
+display: inline-block;
+margin: 24px;
 }
 
 .team_header_person {
@@ -210,6 +335,8 @@ ul {
 }
 
 /* Footer */
+
+
 .footer_logo {
 	color: var(--syniy);
 	font-family: "Raleway", sans-serif;
@@ -233,6 +360,8 @@ ul {
 /* portfolio */
 
 /* header */
+
+
 /* main */
 /*Секція*/
 
@@ -257,9 +386,7 @@ ul {
 
 .container {
 	max-width: 1128px;
-	width: 100%;
 	margin: 0 auto;
-	/* padding: 50px; */
 	/* Fill: Solid #F4F4FD */
 }
 
@@ -293,11 +420,31 @@ ul {
 	color: var(--main-light-color);
 }
 
-.section_row {
+.section_row1 {
 	display: flex;
 	justify-content: space-between;
 	height: 420px;
+	width: 1128px;
+height: 420px;
+border: ;
 }
+
+.section_row2 {
+	display: flex;
+	justify-content: space-between;
+	height: 420px;
+	width: 1128px;
+height: 420px;
+}
+
+.section_row3 {
+	display: flex;
+	justify-content: space-between;
+	height: 420px;
+	width: 1128px;
+height: 420px;
+}
+
 
 .section_row_header {
 	font-family: inherit;
@@ -320,7 +467,16 @@ ul {
 footer {
 	background-color: var(--grey);
 	height: 310px;
-	top: 1764px;
+	width: 1440px;
+}
+
+.container_footer {
+	width: 264px;
+height: 110px;
+display: block;
+padding-top: 100px; 
+margin-left: 156px;
+
 }
 
 /* Footer */
