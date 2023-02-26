@@ -127,18 +127,16 @@ ul {
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: var(--grey);
-	margin-right: 40px;
 }
 
+.header_item:not(:last-of-type) {
+	margin-right: 40px;
+}
 
 .header_nav_list {
 	display: flex;
 align-items: center;
 	margin-left: 76px;
-}
-
-.header_nav_list:not(:last-child) {
-	margin-right: 40px;
 }
 
 .header_link {
@@ -234,7 +232,6 @@ margin-bottom: 48px;
 
 /*Advantages*/
 .advan {
-	
 	padding-top: 120px;
 	padding-bottom: 120px;
 }
@@ -257,6 +254,7 @@ margin-bottom: 48px;
 	line-height: 1.2;
 	letter-spacing: 0.02em;
 	color: var(--grey);
+	padding-bottom: 8px;
 }
 
 .advan-text {
@@ -378,8 +376,8 @@ margin-bottom: 48px;
 /*Секція*/
 
 .portfolio {
-	
-	padding-bottom: 257px;
+	padding-top: 96px;
+	padding-bottom: 120px;
 }
 .visually_hidden {
 	position: absolute;
@@ -404,9 +402,6 @@ margin-bottom: 48px;
 	display: flex;
 	justify-content: center;
 	gap: 24px;
-	
-
-	margin-top: 96px;
 	margin-bottom: 72px;
 }
 
